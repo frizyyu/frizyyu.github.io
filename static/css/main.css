@@ -84,6 +84,7 @@ margin-left: 30px;
     font-style: normal;
     font-variant: normal;
     font-weight: 100;
+    justify-content: center;
 }
 
 .second-scene .text {
@@ -111,6 +112,10 @@ margin-left: 30px;
     display: none;
     flex-direction: column;
     gap: 10px;
+    height: 30%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: center;
 }
 
 a {
@@ -154,11 +159,12 @@ button{
 
 .table-projects{
 flex-direction: column;
-
+overflow: auto;
+height:40%;
+justify-content: center;
 }
 
 table{
-  width:100%;
   table-layout: fixed;
 }
 .table-headers{
@@ -235,13 +241,15 @@ td{
     border: 1px solid black;
     display: inline-block;
     text-align: center;
-    width: 20%;
-    height: 27%;
+    width: 21%;
+    height: 35%;
     align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .main-buttons {
-    width: 100%;
+    width: 99%;
     height: 30%;
     border: none;
     outline: none;
