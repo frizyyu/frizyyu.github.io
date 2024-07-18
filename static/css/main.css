@@ -128,12 +128,20 @@ a {
     font-weight: 100;
 }
 
+a.table-button {
+font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 2vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+}
+
 a.table-button:link {
-  color: #6f60a5;
+  color: #cfc2ff;
 }
 
 a.table-button:visited {
-  color: #6f60a5;
+  color: #cfc2ff;
 }
 
 a.table-button:focus {
@@ -146,7 +154,7 @@ a.table-button:hover {
 
 a.table-button:active {
   background: #9c89e169;
-  color: #8d7bd1;
+  color: #9c89e169;
 }
 
 button{
@@ -159,13 +167,13 @@ button{
 
 .table-projects{
 flex-direction: column;
-overflow: auto;
-height:40%;
+overflow: hidden;
+height:70%;
 justify-content: center;
 }
 
 table{
-width: 100%;
+  width: 90%;
   table-layout: fixed;
 }
 .table-headers{
@@ -175,11 +183,12 @@ width: 100%;
   overflow-x:auto;
   border: 1px solid rgba(255,255,255,0.3);
 }
+
 th{
   padding: 20px 15px;
   text-align: center;
   font-family: "Andale Mono", AndaleMono, monospace;
-    font-size: 20px;
+    font-size: 2vw;
     font-style: normal;
     font-variant: normal;
     font-weight: 100;
@@ -189,7 +198,7 @@ td{
   text-align: center;
   vertical-align:middle;
   font-family: "Andale Mono", AndaleMono, monospace;
-    font-size: 18px;
+    font-size: 2vw;
     font-style: normal;
     font-variant: normal;
     font-weight: 100;
