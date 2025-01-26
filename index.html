@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My portfolio</title>
+  <link rel="stylesheet" href="/static/css/main.css"/>
+  <link rel="icon" href="\static\imgs\main.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+  <div class="scene">
+      <div id="particles-js" class="particles"></div>
+      <div class="menu" align="center">
+      <button class="main-buttons" id="aboutMeButton">ABOUT ME</button>
+      <button class="main-buttons" id="projectsButton" type="button">MY PROJECTS</button>
+      <button class="main-buttons" id="contactsButton" type="button">CONTACTS</button>
+    </div>
+  </div>
+  <div class="second-scene">
+    <div class="content">
+	<img src="\static\imgs\main.png" 	class="photo" id="aboutMePhoto" alt="About Me Photo">
+	<h1 class="heading" id="secondSceneHeading">heading</h1>
+      <div class="text" id="secondSceneText">text<br>bb</div>
+     
+      <div class="links" id="links">
+	<a href="https://github.com/frizyyu" class="link-button">
+          <img src="\static\imgs\gh.png" alt="GH logo">GitHub</a>
+        <a href="https://t.me/frizyyu" class="link-button">
+          <img src="\static\imgs\tg.png" alt="TG logo">Telegram</a>
+        <a href="https://vk.com/hakassx" class="link-button">
+          <img src="\static\imgs\vk.png" alt="VK logo">VK</a>
+	<a href="https://www.youtube.com/@imfrizyy" class="link-button">
+          <img src="\static\imgs\yt.png" alt="YT logo">YouTube</a>
+      </div>
+   <div class="table-projects" id="table-projects">
+    <div class="table-headers">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>PROJECT</th>
+          <th>USED STACK</th>
+          <th>DEVELOPMENT STAGE</th>
+        </tr>
+      </thead>
+    </table>
+    </div>
+    <div class="table-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+	<tr>
+          <td>DPP chat</td>
+          <td>React, Go</td>
+          <td>Stored on <a href="https://github.com/frizyyu/dpp-messenger/tree/main" class="table-button">GitHub</a>, in development</td>
+        </tr>
+	<tr>
+          <td>Color converter</td>
+          <td>Java; JavaFX; Gradle</td>
+          <td>Stored on <a href="https://github.com/frizyyu/JavaColorPicker" class="table-button">GitHub</a>, ready</td>
+        </tr>
+	<tr>
+          <td>Telegram video to video-message bot</td>
+          <td>Python</td>
+          <td>Stored on <a href="https://github.com/frizyyu/videoToTGCircleBot" class="table-button">GitHub</a>, ready</td>
+        </tr>
+        <tr>
+          <td>Web forum for CarX players</td>
+          <td>Python; Flask; HTML; CSS; JS</td>
+          <td>Stored on <a href="https://github.com/frizyyu/web" class="table-button">GitHub</a>, ready</td>
+        </tr>
+	<tr>
+          <td>Voice assistant ver. 2</td>
+          <td>Python</td>
+          <td>Stored on <a href="https://github.com/frizyyu/VA_Gena" class="table-button">GitHub</a>, ready</td>
+        </tr>
+        <tr>
+          <td>Voice assistant ver. 3</td>
+          <td>Java; Python</td>
+          <td>Stored on GitHub in a closed repo, under development</td>
+        </tr>
+	<tr>
+          <td>Horror game</td>
+          <td>C#; Unity</td>
+          <td>Stored on disk, under development</td>
+        </tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+
+       <button class="back-button" id="backButton" type="button">BACK</button>
+    </div>
+  </div>
+  
+  <script src="/static/js/main.js"></script>
+  <script src="\static\js\particles.js"></script>
+  <script src="\static\js\particlesCreator.js"></script>
+  </body>
+</html>

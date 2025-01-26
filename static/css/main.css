@@ -1,0 +1,318 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow: hidden;
+}
+
+.scene, .second-scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease;
+    z-index: 0;
+}
+
+.scene {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.particles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 200%;
+    height: 100%;
+}
+
+.second-scene {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+} 
+
+.content {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform 1s ease;
+    width: 80%;
+    height: 90%;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.5); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.5); 
+}
+
+.content p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.bgPhoto{
+    filter: blur(5px);
+}
+
+.content li {
+margin-left: 30px;
+}
+
+.second-scene .heading{
+    color: #fff;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 4vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+    justify-content: center;
+}
+
+.second-scene .text {
+    color: #fff;
+    margin-bottom: 20px;
+    overflow-x: auto;
+    overflow-y: auto;
+    text-indent: 25px;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    height: 60%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    justify-content: center;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+}
+
+a.table-button {
+font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 2vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+}
+
+a.table-button:link {
+  color: #cfc2ff;
+}
+
+a.table-button:visited {
+  color: #cfc2ff;
+}
+
+a.table-button:focus {
+  background: #7869b05c;
+}
+
+a.table-button:hover {
+  background: #7869b05c;
+}
+
+a.table-button:active {
+  background: #9c89e169;
+  color: #9c89e169;
+}
+
+button{
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 3vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+}
+
+.table-projects{
+flex-direction: column;
+overflow: hidden;
+height:70%;
+justify-content: center;
+}
+
+table{
+  width: 90%;
+  table-layout: fixed;
+}
+.table-headers{
+  background-color: rgba(255,255,255,0.3);
+ }
+.table-content{
+  overflow-x:auto;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+th{
+  padding: 20px 15px;
+  text-align: center;
+  font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 2vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+}
+td{
+  padding: 15px;
+  text-align: center;
+  vertical-align:middle;
+  font-family: "Andale Mono", AndaleMono, monospace;
+    font-size: 2vw;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 100;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+.link-button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #6f60a5;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link-button:active{
+    background: #574b81;
+}
+
+.link-button img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #574b81;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.back-button:active{
+    background: #4a406d;
+}
+
+.menu {
+    position: absolute;
+    z-index: 2;
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    height: 50%;
+    align-items: center;
+}
+
+.main-buttons {
+    width: 100%;
+    height: 27%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #000;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.main-buttons:before {
+    content: '';
+    background: linear-gradient(45deg, rgba(101,0,208,1) 0%, rgba(140,0,209,1) 25%, rgba(178,0,221,1) 50%, rgba(140,0,209,1) 75%, rgba(101,0,208,1) 100%);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 5px;
+}
+
+.main-buttons:active {
+    color: #000
+}
+
+.main-buttons:active:after {
+    background: transparent;
+}
+
+.main-buttons:hover:before {
+    opacity: 1;
+}
+
+.main-buttons:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+}
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
